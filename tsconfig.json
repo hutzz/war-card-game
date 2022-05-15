@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "commonjs",
-		"rootDir": "./Cards",
+		"rootDir": "src",
 		"outDir": "./dist/",
 		"strict": true,
 		"moduleResolution": "node",
@@ -19,7 +19,7 @@
 		"baseUrl": "./",
 		"allowJs": true
 	},
-	"files": ["Cards/War.ts"],
+	"files": ["src/war.ts"],
 	"include": ["./**/*.ts"],
 	"exclude": ["node_modules", "dist"]
 }

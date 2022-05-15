@@ -1,5 +1,5 @@
-import Deck from "./Deck";
-import Card from "./Card";
+import Deck from "./deck";
+import Card from "./card";
 const prompt = require("prompt-sync")();
 
 function getUserInput() {
@@ -24,14 +24,14 @@ function deckSwitch() {
 		console.log("Switching decks...");
 		p1.deck = p1s.deck;
 		p1s.deck = [];
-		// console.log("P1 deck now looks like: ");
-		// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-		// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-		// }
-		// console.log("P2 deck currently looks like (not swapped): ");
-		// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-		// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-		// }
+		console.log("P1 deck now looks like: ");
+		for (let x = 0; x < Object.keys(p1.deck).length; x++) {
+			console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
+		}
+		console.log("P2 deck currently looks like (not swapped): ");
+		for (let x = 0; x < Object.keys(p2.deck).length; x++) {
+			console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
+		}
 	}
 	if (
 		Object.keys(p2.deck).length === 0 &&
@@ -40,14 +40,14 @@ function deckSwitch() {
 		console.log("Switching decks...");
 		p2.deck = p2s.deck;
 		p2s.deck = [];
-		// console.log("P2 deck now looks like: ");
-		// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-		// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-		// }
-		// console.log("P1 deck currently looks like (not swapped): ");
-		// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-		// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-		// }
+		console.log("P2 deck now looks like: ");
+		for (let x = 0; x < Object.keys(p2.deck).length; x++) {
+			console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
+		}
+		console.log("P1 deck currently looks like (not swapped): ");
+		for (let x = 0; x < Object.keys(p1.deck).length; x++) {
+			console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
+		}
 	}
 }
 
@@ -245,21 +245,21 @@ while (!exitFlag) {
 	if (exitFlag) break;
 	deckSwitch();
 	compareCards(p1hand, p2hand);
-	// console.log("Player 1 deck: ");
-	// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-	// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-	// }
-	// console.log("\nP1 auxiliary deck: ");
-	// for (let x = 0; x < Object.keys(p1s.deck).length; x++) {
-	// 	console.log(`${p1s.deck[x].name} of ${p1s.deck[x].suit}`);
-	// }
-	// console.log("\nPlayer 2 deck: ");
-	// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-	// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-	// }
-	// console.log("\nP2 auxiliary deck: ");
-	// for (let x = 0; x < Object.keys(p2s.deck).length; x++) {
-	// 	console.log(`${p2s.deck[x].name} of ${p2s.deck[x].suit}`);
-	// }
+	console.log("Player 1 deck: ");
+	for (let x = 0; x < Object.keys(p1.deck).length; x++) {
+		console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
+	}
+	console.log("\nP1 auxiliary deck: ");
+	for (let x = 0; x < Object.keys(p1s.deck).length; x++) {
+		console.log(`${p1s.deck[x].name} of ${p1s.deck[x].suit}`);
+	}
+	console.log("\nPlayer 2 deck: ");
+	for (let x = 0; x < Object.keys(p2.deck).length; x++) {
+		console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
+	}
+	console.log("\nP2 auxiliary deck: ");
+	for (let x = 0; x < Object.keys(p2s.deck).length; x++) {
+		console.log(`${p2s.deck[x].name} of ${p2s.deck[x].suit}`);
+	}
 }
 console.log("Exiting...");
