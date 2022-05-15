@@ -1,0 +1,17 @@
+{
+  "name": "war-card-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.33",
+    "prompt-sync": "^4.2.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  }
+}
