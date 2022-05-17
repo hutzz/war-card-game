@@ -6,7 +6,7 @@ class Deck {
 		this.populateDeck();
 		if (empty === true) this.deck = [];
 	}
-	shuffleDeck(deck: Array<Card>) {
+	public static shuffleDeck(deck: Array<Card>) {
 		for (let i = deck.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[deck[i], deck[j]] = [deck[j], deck[i]];
@@ -33,7 +33,7 @@ class Deck {
 			this.deck.push(new Card("King", suit, 13));
 			this.deck.push(new Card("Ace", suit, 14));
 		}
-		this.shuffleDeck(this.deck);
+		Deck.shuffleDeck(this.deck);
 	}
 	// testDeck() {
 	// 	this.deck.push(new Card("Three", "Spades", 3));
@@ -46,13 +46,29 @@ class Deck {
 	// 	this.deck.push(new Card("Ace", "Spades", 14));
 	// 	this.deck.push(new Card("Three", "Spades", 3));
 	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	// this.deck.push(new Card("Three", "Spades", 3));
-	// 	// this.deck.push(new Card("Four", "Spades", 4));
-	// 	// this.deck.push(new Card("Three", "Spades", 3));
-	// 	// this.deck.push(new Card("Four", "Spades", 4));
-	// 	// this.deck.push(new Card("Three", "Spades", 3));
-	// 	// this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.shuffleDeck(this.deck);
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Ace", "Spades", 14));
+	// 	this.deck.push(new Card("Ace", "Spades", 14));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	this.deck.push(new Card("Three", "Spades", 3));
+	// 	this.deck.push(new Card("Four", "Spades", 4));
+	// 	Deck.shuffleDeck(this.deck);
 	// }
 }
 export default Deck;
