@@ -1,5 +1,5 @@
 import { suit } from "./types";
-import Card from "./card";
+import Card from "./Card";
 class Deck {
 	deck: Array<Card> = [];
 	constructor(empty: boolean) {

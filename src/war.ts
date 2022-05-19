@@ -1,5 +1,5 @@
-import Deck from "./deck";
-import Card from "./card";
+import Deck from "./Deck";
+import Card from "./Card";
 const prompt = require("prompt-sync")();
 
 function getUserInput() {
