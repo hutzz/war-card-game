@@ -35,40 +35,5 @@ class Deck {
 		}
 		Deck.shuffleDeck(this.deck);
 	}
-	// testDeck() {
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Ace", "Spades", 14));
-	// 	this.deck.push(new Card("Ace", "Spades", 14));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Ace", "Spades", 14));
-	// 	this.deck.push(new Card("Ace", "Spades", 14));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	this.deck.push(new Card("Three", "Spades", 3));
-	// 	this.deck.push(new Card("Four", "Spades", 4));
-	// 	Deck.shuffleDeck(this.deck);
-	// }
 }
 export default Deck;
