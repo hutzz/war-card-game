@@ -24,14 +24,6 @@ function deckSwitch() {
 		console.log("Switching decks...");
 		p1.deck = p1s.deck;
 		p1s.deck = [];
-		// console.log("P1 deck now looks like: ");
-		// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-		// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-		// }
-		// console.log("P2 deck currently looks like (not swapped): ");
-		// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-		// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-		// }
 		Deck.shuffleDeck(p1.deck);
 	}
 	if (
@@ -41,14 +33,6 @@ function deckSwitch() {
 		console.log("Switching decks...");
 		p2.deck = p2s.deck;
 		p2s.deck = [];
-		// console.log("P2 deck now looks like: ");
-		// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-		// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-		// }
-		// console.log("P1 deck currently looks like (not swapped): ");
-		// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-		// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-		// }
 		Deck.shuffleDeck(p2.deck);
 	}
 }
@@ -283,21 +267,5 @@ while (!exitFlag) {
 			Object.keys(p2WarDeck.deck).length
 		} cards left\n`
 	);
-	// console.log("Player 1 deck: ");
-	// for (let x = 0; x < Object.keys(p1.deck).length; x++) {
-	// 	console.log(`${p1.deck[x].name} of ${p1.deck[x].suit}`);
-	// }
-	// console.log("\nP1 auxiliary deck: ");
-	// for (let x = 0; x < Object.keys(p1s.deck).length; x++) {
-	// 	console.log(`${p1s.deck[x].name} of ${p1s.deck[x].suit}`);
-	// }
-	// console.log("\nPlayer 2 deck: ");
-	// for (let x = 0; x < Object.keys(p2.deck).length; x++) {
-	// 	console.log(`${p2.deck[x].name} of ${p2.deck[x].suit}`);
-	// }
-	// console.log("\nP2 auxiliary deck: ");
-	// for (let x = 0; x < Object.keys(p2s.deck).length; x++) {
-	// 	console.log(`${p2s.deck[x].name} of ${p2s.deck[x].suit}`);
-	// }
 }
 console.log("Exiting...");
