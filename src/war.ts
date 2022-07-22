@@ -125,7 +125,6 @@ function checkWin(
 	return false;
 }
 function war() {
-	// TODO: Push winner's hand to war deck as well before it gets shuffled back into the auxiliary deck
 	console.log("War!");
 	console.log("Player 1 deck: ");
 	for (let x = 0; x < Object.keys(p1.deck).length; x++) {
